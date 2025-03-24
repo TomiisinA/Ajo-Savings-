@@ -1,0 +1,33 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    margin:  30px;
+    height: 120px;
+}
+
+a{
+  transition: all 0.4s ease;
+  font-size: 24px;
+  
+  
+}
+
+ .menu{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0 30px;
+    font-size: large;  
+ }
+
+ button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color:#5D20D2;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+ }

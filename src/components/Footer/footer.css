@@ -1,0 +1,30 @@
+.footer {
+  padding: 20px 40px;
+  background-color: #efe9fb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-body {
+  text-align: left;
+  padding-right: 20px;
+  line-height: 1.6;
+}
+
+.logo-body p {
+  font-size: 18px;
+}
+
+.links {
+  padding: 30px;
+}
+ul {
+  list-style-type: none;
+  line-height: 2;
+}
+h1{
+    color: #5D20D2;
+    font-size: 20px;
+
+}
