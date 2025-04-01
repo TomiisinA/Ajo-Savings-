@@ -77,9 +77,9 @@ function HomePage() {
             <img src="Rectangle 33.png" alt="" />
           </div>
           <div className="testimonial-img">
-            {/* <div className="circle-2">
+            <div className="circle-2">
               <img src="Rectangle 31.png" alt="" />
-            </div> */}
+            </div>
           </div>
           <div className="testimonial-text">
             <img src="quote.png" alt="" />

@@ -1,4 +1,5 @@
 import "./footer.css";
+import { FaTwitter, FaLinkedin, FaFacebook } from "react-icons/fa";
 function Footer() {
   return (
     <div className="footer">
@@ -14,7 +15,17 @@ function Footer() {
             <br /> secure, and hassle-free access to capital.
           </p>
         </div>
-        <div className="icons"></div>
+        <div className="icons">
+          <div className="icon">
+            <FaTwitter />
+          </div>
+          <div className="icon">
+            <FaLinkedin />
+          </div>
+          <div className="icon">
+            <FaFacebook />
+          </div>
+        </div>
       </div>
       <div className="links">
         <h1>Quick Links</h1>
