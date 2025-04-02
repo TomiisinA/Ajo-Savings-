@@ -1,6 +1,11 @@
 import "./homePage.css";
+import Footer from "../../components/Footer/footer";
+import { useNavigate } from "react-router";
+
 function HomePage() {
+  const navigate = useNavigate();
   return (
+    
     <div className="container">
       <div className="home-page">
         <div className="text-container">
@@ -13,7 +18,10 @@ function HomePage() {
               both businesses and individuals.
             </p>
             <div>
-              <button> Get Started</button>
+              <button onClick={() => navigate("/SignUp", { replace: true })}>
+               
+                Get Started
+              </button>
             </div>
           </div>
         </div>
@@ -26,7 +34,7 @@ function HomePage() {
         <div className="second-heading">
           <h1> What we do</h1>
           <p>
-            We halp users manage and create saving plan to attain their desired
+            We help users manage and create saving plan to attain their desired
             financial goal.
           </p>
         </div>
@@ -96,6 +104,7 @@ function HomePage() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

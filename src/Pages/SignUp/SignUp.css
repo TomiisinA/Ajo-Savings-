@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.form-body {
+  background-color: whitesmoke;
+  padding: 60px;
+  flex: 3;
+
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border-radius: 5px;
+  border: 1px solid #5d20d2;
+  height: 50px;
+  padding: 15px;
+  margin: 10px 0;
+}
+.right {
+  background-color: plum;
+}
+
+

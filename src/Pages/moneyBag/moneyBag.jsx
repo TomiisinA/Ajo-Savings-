@@ -1,7 +1,7 @@
 function MoneyBag() {
     return(
         <div>
-            hi
+           MoneyBag Plans
         </div>
     )
     
