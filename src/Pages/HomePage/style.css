@@ -1,3 +1,6 @@
+.container{
+  overflow-y: hidden;
+}
 .home-page {
   padding: 20px 40px;
   margin: 20px;
@@ -33,6 +36,7 @@
 .second-section {
   margin: 0 20px;
   text-align: center;
+  width: 100%;
 }
 
 .second-section h1 {
@@ -158,3 +162,18 @@ p {
   font-size: 14px;
   color: #777;
 }
+
+/* responsive Design */
+
+/* if screen is smaller than 480 px change BG to red */
+ @media screen and (max-width: 480px){
+.container{
+    background-color: red;
+    width: auto;
+
+ 
+  }
+  
+  
+}
+

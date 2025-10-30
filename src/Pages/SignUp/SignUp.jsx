@@ -1,8 +1,16 @@
 import "./SignUp.css";
-import {useForm} from "react-hook-form"
+import { useForm } from "react-hook-form";
 
 const SignUp = () => {
-  const {register}= useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
   return (
     <div className="form-container">
       <div className="logo"></div>
@@ -11,22 +19,46 @@ const SignUp = () => {
           <h1>Create Account</h1>
         </div>
         <div>
-          <form action="">
+          <form action="" onSubmit={handleSubmit(onSubmit)}>
             <div className="form-input">
               <label htmlFor="firstName">First Name</label>
-              <input {...register("firstName")} type="text" />
+              <input
+                {...register("firstName", {
+                  required: "Enter first name",
+                })}
+                type="text"
+              />
+        
             </div>
             <div className="form-input">
               <label htmlFor="lastName">Last Name</label>
-              <input {...register("firstName")} type="text" />
+              <input
+                {...register("lastName", {
+                  required: true,
+                })}
+                type="text"
+              />
             </div>
             <div className="form-input">
               <label htmlFor="email">Email</label>
-              <input type="email" />
+              <input
+                {...register("email", {
+                  required: true,
+                  validate: (value) => value.includes("@"),
+                })}
+                type="email"
+              />
+              {errors.email && (
+                <div className="error-msg">{errors.email.message}</div>
+              )}
             </div>
             <div className="form-input">
               <label htmlFor="password">Password</label>
-              <input type="password" />
+              <input
+                {...register("password", { required: true, minLength: 2 })}
+                type="password"
+              />
+              {errors.password && <div>{errors.password.message}</div>}
             </div>
             <div className="form-input">
               <label htmlFor="email">Country</label>

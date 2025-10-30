@@ -1,4 +1,4 @@
-import "./homePage.css";
+import "./style.css";
 import Footer from "../../components/Footer/footer";
 import { useNavigate } from "react-router";
 
@@ -26,7 +26,7 @@ function HomePage() {
           </div>
         </div>
         <div className="img-container">
-          <img src="iPhone X.png" alt="" />
+          <img  className="phone" src="iPhone X.png" alt="" />
         </div>
       </div>
       {/* second section */}
