@@ -8,10 +8,11 @@ import {
 import About from "./Pages/About/about";
 import MoneyBag from "./Pages/moneyBag/moneybag";
 import RootLayout from "./layout/rootLayout";
-import SignUp from "./Pages/SignUp/SignUp";
+
 import NotFound from "./components/NotFound/NotFound";
 import SignIn from "./Pages/SignIn/signIn";
 import HomePage from "./Pages/HomePage";
+import SignUp from "./Pages/SignUp";
 
 
 

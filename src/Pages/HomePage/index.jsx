@@ -52,8 +52,8 @@ function HomePage() {
       </section>
 
       {/* ================= THIRD SECTION ================= */}
-      <section className="px-6 md:px-10 py-6 text-center bg-[#efe9fb] flex flex-col items-center">
-        <h1 className="my-8 text-xl font-semibold text-primary-200">
+      <section className="px-6 md:px-10 py-6 text-center bg-white-100 flex flex-col items-center">
+        <h1 className="my-8 text-4xl font-bold text-primary-200">
           How it works
         </h1>
 
@@ -102,7 +102,7 @@ function HomePage() {
 
       {/* ================= FOURTH SECTION ================= */}
       <section className="py-6 text-center">
-        <h1 className="my-8 text-xl font-semibold text-primary-200">
+        <h1 className="my-8 text-4xl font-semibold text-primary-200">
           What Customers Say
         </h1>
 
@@ -110,7 +110,7 @@ function HomePage() {
           <img src="Rectangle 33.png" alt="" className="w-full md:w-auto" />
 
           <div className="relative w-[250px] h-[250px]">
-            <div className="absolute inset-0 bg-[#898efc] rounded-full rounded-tr-none" />
+            <div className="absolute inset-0 bg-blue rounded-full rounded-tr-none" />
             <img
               src="Rectangle 31.png"
               alt=""
