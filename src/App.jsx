@@ -1,3 +1,4 @@
+
 import "./App.css";
 import {
   Routes,
@@ -6,13 +7,14 @@ import {
 } from "react-router-dom";
 ;
 import About from "./Pages/About/about";
-import MoneyBag from "./Pages/moneyBag/moneybag";
 import RootLayout from "./layout/rootLayout";
-
 import NotFound from "./components/NotFound/NotFound";
-import SignIn from "./Pages/SignIn/signIn";
 import HomePage from "./Pages/HomePage";
-import SignUp from "./Pages/SignUp";
+import MoneyBag from "./Pages/moneyBag";
+import SignIn from "./Pages/AuthenticationPages/SignIn/signIn";
+import SignUp from "./Pages/AuthenticationPages/SignUp";
+import { DashboardLayout } from "./layout/DashboardLayout";
+import Dashboard from "./Pages/Dashboard";
 
 
 
@@ -26,8 +28,12 @@ function App() {
           <Route path="moneybag" element={<MoneyBag />} />
         </Route>
         <Route path="signUp" element={<SignUp />} />
-        <Route path="signIn" element={<SignIn/>}/>
+        <Route path="signIn" element={<SignIn />} />
         <Route path="*" element={<NotFound />} />
+
+        <Route element={<DashboardLayout />}>
+          <Route path="dashboard" element={<Dashboard />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
