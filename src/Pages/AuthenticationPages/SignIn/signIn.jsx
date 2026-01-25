@@ -1,8 +1,36 @@
-
-import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignIn = () => {
+  const navigate = useNavigate();
 
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    // console.log("Login Data:", data);
+    // navigate("/dashboard");
+
+    const savedUser = JSON.parse(localStorage.getItem("user"));
+
+    if (!savedUser) {
+      alert("No account found. Please sign up.");
+      return;
+    }
+
+    if (
+      data.email === savedUser.email &&
+      data.password === savedUser.password
+    ) {
+      localStorage.setItem("isAuthenticated", "true");
+      navigate("/dashboard");
+    } else {
+      alert("Invalid email or password");
+    }
+  };
 
   return (
     <div className="min-h-screen flex">
@@ -23,17 +51,29 @@ const SignIn = () => {
           </p>
 
           {/* Form */}
-          <form className="space-y-6">
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
             {/* Email */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Email
               </label>
               <input
+                {...register("email", {
+                  required: "Email is required",
+                  pattern: {
+                    value: /^\S+@\S+$/i,
+                    message: "Invalid email",
+                  },
+                })}
                 type="email"
                 placeholder="Enter your email"
                 className="w-full h-11 px-4 rounded-md border border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
+              {errors.email && (
+                <p className="text-red-500 text-xs mt-1">
+                  {errors.email.message}
+                </p>
+              )}
             </div>
 
             {/* Password */}
@@ -42,10 +82,22 @@ const SignIn = () => {
                 Password
               </label>
               <input
+                {...register("password", {
+                  required: "Password is required",
+                  minLength: {
+                    value: 6,
+                    message: "Minimum 6 characters",
+                  },
+                })}
                 type="password"
                 placeholder="********"
                 className="w-full h-11 px-4 rounded-md border border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
               />
+              {errors.password && (
+                <p className="text-red-500 text-xs mt-1">
+                  {errors.password.message}
+                </p>
+              )}
             </div>
 
             {/* Remember / Forgot */}
@@ -96,6 +148,5 @@ const SignIn = () => {
     </div>
   );
 };
-
 
 export default SignIn;

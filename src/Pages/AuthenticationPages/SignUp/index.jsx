@@ -1,7 +1,9 @@
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -9,6 +11,10 @@ const SignUp = () => {
   } = useForm();
 
   const onSubmit = (data) => {
+     localStorage.setItem("user", JSON.stringify(data));
+
+    //  alert("Account created successfully!");
+     navigate("/dashboard");
     console.log(data);
   };
 
