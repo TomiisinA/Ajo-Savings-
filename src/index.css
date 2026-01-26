@@ -6,8 +6,9 @@
   /* Color Palette */
   --color-primary-100: #5D20D2;
   --color-primary-200: #411693;
-  --color-primary-300: #efe9fb;
+  --color-primary-300: #efe9fb; 
   --color-primary-400: #7946DA;
+  --color-primary-500:#391480;
   --color-gray-100:#3A3A3AE5;
   --color-gray-200: #E5F1F5;
   --color-gray-300: #3A3A3A;
@@ -21,7 +22,6 @@
   --color-yellow: #FAF8D1;
   --color-red: #FFEDEC;
   --color-green: #D1FADF;
-  #411693
 
 
   

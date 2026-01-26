@@ -15,6 +15,7 @@ import SignIn from "./Pages/AuthenticationPages/SignIn/signIn";
 import SignUp from "./Pages/AuthenticationPages/SignUp";
 import { DashboardLayout } from "./layout/DashboardLayout";
 import Dashboard from "./Pages/Dashboard";
+import { MyWallet } from "./Pages/myWallet";
 
 
 
@@ -33,6 +34,7 @@ function App() {
 
         <Route element={<DashboardLayout />}>
           <Route path="dashboard" element={<Dashboard />} />
+          <Route path="my-wallet" element={<MyWallet />} />
         </Route>
       </Routes>
     </BrowserRouter>

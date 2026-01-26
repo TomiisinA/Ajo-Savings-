@@ -1,13 +1,16 @@
 import { RxDashboard } from "react-icons/rx";
 import SidebarItem from "./customLink";
 import { Icon } from "@iconify/react";
+import { NavLink } from "react-router";
 
 const Sidebar = () => {
   return (
     <aside className="w-64 min-h-screen bg-white flex flex-col px-6 py-8">
       {/* Logo */}
       <div className="flex items-center gap-2 mb-10">
+        <NavLink to="/">
         <img src="logo.png" alt="MoneyBag" className="h-20" />
+        </NavLink>
       </div>
 
       {/* Navigation */}
@@ -59,14 +62,14 @@ const Sidebar = () => {
       <div className="grow" />
 
       {/* Help Center Card */}
-      <div className="bg-purple-700 text-white rounded-xl p-4 mb-6 text-sm">
+      <div className="bg-primary-500 text-white rounded-xl p-4 mb-6 text-sm">
         <p className="font-semibold mb-1">Help Center</p>
         <p className="text-xs opacity-90">
           To ensure timely and efficient support services.
         </p>
 
-        <p className="mt-3 text-xs">
-          Call: <span className="font-medium">0800000000</span>
+        <p className="mt-3 text-xs border bg-white rounded-sm p-2 ">
+          Call: <span className="font-medium text-primary-500">0800000000</span>
         </p>
       </div>
 

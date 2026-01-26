@@ -5,7 +5,7 @@ function HomePage() {
   const navigate = useNavigate();
 
   return (
-    <div className="overflow-y-hidden">
+    <div className="overflow-hidden ">
       {/* ================= HERO SECTION ================= */}
       <section className="flex flex-col md:flex-row px-6 md:px-10 py-6 m-6 min-h-[calc(100vh-80px)]">
         {/* Text */}
