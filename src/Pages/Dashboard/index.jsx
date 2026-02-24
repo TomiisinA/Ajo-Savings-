@@ -8,13 +8,13 @@ export const BalanceCard = ({ title, amount, bg }) => {
   const [hideBalance, setHideBalance] = useState(false);
   return (
     <div className={`rounded-lg p-6 ${bg}`}>
-      <p className="text-2xl font-bold flex items-center justify-between">
+      <p className="text-xl text-gray-300 font-bold flex items-center justify-between">
         {hideBalance ? "••••••" : amount}
         <button onClick={() => setHideBalance(!hideBalance)}>
           <Icon icon="clarity:eye-hide-line" width="22" />
         </button>
       </p>
-      <p className="font-semibold mt-2">{title}</p>
+    <p className="font-extrabold text-gray-400 mt-2">{title}</p>
     </div>
   );
 };

@@ -7,11 +7,11 @@ function HomePage() {
   return (
     <div className="overflow-hidden ">
       {/* ================= HERO SECTION ================= */}
-      <section className="flex flex-col md:flex-row px-6 md:px-10 py-6 m-6 min-h-[calc(100vh-80px)]">
+      <section className=" flex flex-col md:flex-row px-6 md:px-10 py-6 m-6 min-h-[calc(100vh-80px)]">
         {/* Text */}
         <div className="flex-3 flex items-center">
           <div className="flex flex-col justify-center gap-12 pr-0 md:pr-24">
-            <h1 className="text-hero font-bold text-primary-200">
+            <h1 className="heading-hero font-bold text-primary-200 ">
               Unlock your Financial Future: Save smarter
             </h1>
 
@@ -39,7 +39,7 @@ function HomePage() {
 
       {/* ================= SECOND SECTION ================= */}
       <section className="mx-6 text-center w-full">
-        <h1 className="text-3xl md:text-[40px] font-bold text-primary-200 ">
+        <h1 className="heading-xl md:text-[40px] font-bold text-primary-200 ">
           What we do
         </h1>
 
@@ -53,7 +53,7 @@ function HomePage() {
 
       {/* ================= THIRD SECTION ================= */}
       <section className="px-6 md:px-10 py-6 text-center bg-white-100 flex flex-col items-center">
-        <h1 className="my-8 text-4xl font-bold text-primary-200">
+        <h1 className="my-8 heading-xl font-bold text-primary-200">
           How it works
         </h1>
 
@@ -70,30 +70,28 @@ function HomePage() {
         {/* Boxes */}
         <div className="flex flex-col md:flex-row gap-6 mt-6 w-full justify-center">
           <div className="bg-white p-6 text-left w-full md:w-[30%] rounded-lg shadow-md">
-            <h2 className="text-primary-200 text-xl font-semibold mb-2">
-              1. Sign up
-            </h2>
-            <p className="text-[#3a3a3ae5] text-lg">
+            <h2 className="text-primary-200 heading-lg  mb-2">1. Sign up</h2>
+            <p className="text-gray-100 text-lg">
               Create an account with us to get with nice features for your
               saving plan.
             </p>
           </div>
 
           <div className="bg-white p-6 text-left w-full md:w-[30%] rounded-lg shadow-md">
-            <h2 className="text-primary-200 text-xl font-semibold mb-2">
+            <h2 className="text-primary-200 heading-lg  mb-2">
               2. Select a Saving plan
             </h2>
-            <p className="text-[#3a3a3ae5] text-lg">
+            <p className="text-gray-100 text-lg">
               We have three savings plans; Emergency, Flex and Target plan. You
               have access to create more wallets in any currency.
             </p>
           </div>
 
           <div className="bg-white p-6 text-left w-full md:w-[30%] rounded-lg shadow-md">
-            <h2 className="text-primary-200 text-xl font-semibold mb-2">
+            <h2 className="text-primary-200 heading-lg  mb-2">
               3. Manage your Portfolio
             </h2>
-            <p className="text-[#3a3a3ae5] text-lg">
+            <p className="text-gray-100 text-lg">
               You have access to create more wallets in any currency.
             </p>
           </div>
@@ -102,7 +100,7 @@ function HomePage() {
 
       {/* ================= FOURTH SECTION ================= */}
       <section className="py-6 text-center">
-        <h1 className="my-8 text-4xl font-semibold text-primary-200">
+        <h1 className="my-8 heading-xl text-primary-200">
           What Customers Say
         </h1>
 
@@ -120,13 +118,13 @@ function HomePage() {
 
           <div className="px-6 md:px-10 text-left leading-relaxed max-w-md">
             <img src="quote.png" alt="" className="mb-4" />
-            <p className="text-[#3a3a3ae5] text-lg">
+            <p className="text-black-300 text-lg">
               MoneyBag, has helped me many times, achieve my saving goal. Guys,
               its simple and fast to use, and it has wonderful saving plans.
             </p>
 
-            <p className="mt-4 font-semibold text-gray-600">Laura</p>
-            <p className="text-sm text-gray-500">Entrepreneur</p>
+            <p className="mt-4 font-semibold text-black-300">Laura</p>
+            <p className="text-sm text-black-300">Entrepreneur</p>
           </div>
         </div>
       </section>

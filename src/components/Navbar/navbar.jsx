@@ -14,10 +14,10 @@ function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-200">
-      <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+      <div className="flex items-center justify-between px-6 py-2 max-w-7xl mx-auto">
         {/* Logo */}
         <NavLink to="/">
-          <img src="logo.png" alt="Logo" className="w-40 h-auto" />
+          <img src="logo.png" alt="Logo" className="w-30 h-auto" />
         </NavLink>
 
         {/* Desktop Menu */}

@@ -5,7 +5,7 @@ import { NavLink } from "react-router";
 
 const Sidebar = () => {
   return (
-    <aside className="w-64 min-h-screen bg-white flex flex-col px-6 py-8">
+    <aside className="w-60 min-h-screen bg-white flex flex-col px-6 py-8">
       {/* Logo */}
       <div className="flex items-center gap-2 mb-10">
         <NavLink to="/">
