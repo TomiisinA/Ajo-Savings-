@@ -48,7 +48,7 @@ function HomePage() {
           financial goal.
         </p>
 
-        <img src="iPad Pro.png" alt="" className="mx-auto" />
+        <img src="iPad Pro.png" alt="" className="mx-auto w-auto md:w-full" />
       </section>
 
       {/* ================= THIRD SECTION ================= */}
@@ -105,7 +105,7 @@ function HomePage() {
         </h1>
 
         <div className="flex flex-col md:flex-row justify-center items-center gap-6">
-          <img src="Rectangle 33.png" alt="" className="w-full md:w-auto" />
+          <img src="Rectangle 33.png" alt="" className="w-full md:w-auto hidden " />
 
           <div className="relative w-[250px] h-[250px]">
             <div className="absolute inset-0 bg-blue rounded-full rounded-tr-none" />

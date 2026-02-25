@@ -71,38 +71,55 @@ export const MyWallet = () => {
 
         <div className="border bg-primary-600 rounded-lg p-6 border-none w-auto">
           <div
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4
  mb-6"
           >
-            <BalanceCard
-              title="Total Amount"
-              amount={`N12,000,000.10`}
-              bg="bg-primary-400 text-white"
-            />
-            <div className="border">
-              
+            <div className="w-auto">
+              <BalanceCard
+                title="Total Amount"
+                amount={`N12,000,000.10`}
+                bg="bg-primary-400 text-white "
+              />
 
+              <div className="flex gap-4 mb-4 pt-4">
+                <button className="bg-white text-primary-200 px-6 py-3 rounded-lg font-semibold">
+                  Create New Wallet
+                </button>
+                <button
+                  className="bg-white text-primary-200 px-6 py-3 rounded-lg font-semibold"
+                  onClick={() => setIsFundOpen(true)}
+                >
+                  Fund Wallet
+                </button>
+
+                <button className="bg-white text-primary-200 px-6 py-3 rounded-lg font-semibold">
+                  Withdraw
+                </button>
+              </div>
+            </div>
+            <div className=" bg-white rounded-lg p-4  ">
+              <p className="text-primary-200"> Recent Transactions</p>
+              <div className="  rounded-md text-grey-400 p-4 mt-4 bg-primary-600">
+                <div className="border-b border-gray-400 border-0  pb-4 mb-3">
+                  <p className="flex justify-between pb-2">
+                    {" "}
+                    You withdrew <span>N10,000.00 </span>
+                  </p>
+                  <p className="text-sm"> Feb 04 at 8: 00pm</p>
+                </div>
+                <div className="border-b border-gray-400 border-0  pb-4 mb-3">
+                  <p className="flex justify-between pb-2">
+                    {" "}
+                    You withdrew <span>N10,000.00 </span>
+                  </p>
+                  <p className="text-sm"> Feb 04 at 8: 00pm</p>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="flex gap-4 mb-4">
-            <button className="bg-white text-primary-200 px-6 py-3 rounded-lg font-semibold">
-              Create New Wallet
-            </button>
-            <button
-              className="bg-white text-primary-200 px-6 py-3 rounded-lg font-semibold"
-              onClick={() => setIsFundOpen(true)}
-            >
-              Fund Wallet
-            </button>
-
-            <button className="bg-white text-primary-200 px-6 py-3 rounded-lg font-semibold">
-              Withdraw
-            </button>
-          </div>
-
           <p className="text-sm text-primary-200 cursor-pointer mb-6">
-            View Pending Approval
+            Direct Wallet Top-up
           </p>
         </div>
       </div>
