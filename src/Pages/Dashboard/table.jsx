@@ -76,7 +76,7 @@ export const Table = ({ search = "" }) => {
                   </span>
                 </td>
                 <td className="font-semibold">₦{tx.amount.toLocaleString()}</td>
-                <td className="text-gray-500">{tx.date}</td>
+                <td className="">{tx.date}</td>
               </tr>
             ))
           )}
