@@ -16,7 +16,7 @@ import SignUp from "./Pages/AuthenticationPages/SignUp";
 import { DashboardLayout } from "./layout/DashboardLayout";
 import Dashboard from "./Pages/Dashboard";
 import { MyWallet } from "./Pages/myWallet";
-import { About } from "./Pages/About/about";
+
 
 
 
@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route element={<RootLayout />}>
           <Route path="/" element={<HomePage />} />
-          <Route path="about" element={<About />} />
+          {/* <Route path="about" element={<About />} /> */}
           <Route path="moneybag" element={<MoneyBag />} />
         </Route>
         <Route path="signUp" element={<SignUp />} />
