@@ -6,7 +6,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 ;
-import About from "./Pages/About/about";
+
 import RootLayout from "./layout/rootLayout";
 import NotFound from "./components/NotFound/NotFound";
 import HomePage from "./Pages/HomePage";
@@ -16,6 +16,7 @@ import SignUp from "./Pages/AuthenticationPages/SignUp";
 import { DashboardLayout } from "./layout/DashboardLayout";
 import Dashboard from "./Pages/Dashboard";
 import { MyWallet } from "./Pages/myWallet";
+import { About } from "./Pages/About/about";
 
 
 
